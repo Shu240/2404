@@ -32,10 +32,10 @@ for i in range(5):
 
 
 #creating a directory for resized images
-os.mkdir('/content/image resized')
+os.mkdir('/content/image_reshaped')
 
 original_folder = '/content/train/'
-resized_folder = '/content/image resized/'
+resized_folder = '/content/image_reshaped/'
 
 for i in range(80):
 
@@ -90,11 +90,11 @@ files = []
 
 [files.extend(glob.glob(image_directory + '*.' + e)) for e in image_extension]
 
-weed_images = np.asarray([cv2.imread(file) for file in files])
+Plant_images = np.asarray([cv2.imread(file) for file in files])
 
-print(weed_images)
-print(weed_images.shape)
-X = weed_images
+print(Plant_images)
+print(Plant_images.shape)
+X = Plant_images
 Y = np.asarray(labels)
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=2)
 

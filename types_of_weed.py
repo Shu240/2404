@@ -12,15 +12,15 @@ import matplotlib.image as mpimg
 from sklearn.model_selection import train_test_split
 from google.colab.patches import cv2_imshow
 # display Celosa image
-img = mpimg.imread('/content/Weed_dataset/Celosa/00ab26d4-71a6-4185-970f-e03166ad10ae.jpeg')
+img = mpimg.imread('/content/Weed_Dataset/Celosa/00ab26d4-71a6-4185-970f-e03166ad10ae.jpeg')
 imgplt = plt.imshow(img)
 plt.show()
 # display Crowfoot image
-img = mpimg.imread('/content/Weed_dataset/Crowfoot/03e0ed29-50c9-4872-b174-8d8287b33cfa.jpeg')
+img = mpimg.imread('/content/Weed_Dataset/Crowfoot/03e0ed29-50c9-4872-b174-8d8287b33cfa.jpeg')
 imgplt = plt.imshow(img)
 plt.show()
 # display chloris image
-img = mpimg.imread('/content/Weed_dataset/Purple Chloris/02d106b4-7015-45d4-b1a0-d269bde487d2.jpeg')
+img = mpimg.imread('/content/Weed_Dataset/Purple Chloris/02d106b4-7015-45d4-b1a0-d269bde487d2.jpeg')
 imgplt = plt.imshow(img)
 plt.show()
 file_names = os.listdir('/content/train/')
